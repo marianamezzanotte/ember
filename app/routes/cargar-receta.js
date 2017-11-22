@@ -7,9 +7,10 @@ export default Route.extend({
     return this.get('ajax').request('http://web-unicen.herokuapp.com/api/thing/group/333');
   },
 
-  actions: {
+ actions: 
+ {
     guardar(nr, c, time){
-      this.get('ajax').post('http://web-unicen.herokuapp.com/api/thing/', { data: {group: 333 , thing:{ nombreReceta: nr, categoria: c, tiempococ: time } }});
+      this.get('ajax').post('http://web-unicen.herokuapp.com/api/thing/', { data: {group: 333 , thing:{ nombrereceta: nr, categoria: c, tiempococ: time } }});
       this.refresh();
     },
 
